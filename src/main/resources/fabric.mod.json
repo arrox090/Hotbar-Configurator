@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarconfigurator",
+  "version": "${version}",
+  "name": "Hotbar Configurator",
+  "description": "This is a mod which allows the player to make his own custom configuration of what type of items should go into which hotbar slot (works with pick up, and quick move actions)",
+  "authors": ["arrox090"],
+  "contact": {
+    "homepage": "https://arrox090.net",
+    "sources": "https://github.com/arrox090/Hotbar-Configurator"
+  },
+  "license": "MIT",
+  "icon": "assets/hotbarconfigurator/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.arrox090.hotbarconfigurator.HotbarConfigurator"],
+    "modmenu": ["net.arrox090.hotbarconfigurator.config.ModMenuIntegration"]
+  },
+  "mixins": ["hotbarconfigurator.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=15.0.0"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

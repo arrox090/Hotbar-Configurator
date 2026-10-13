@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "net.arrox090.hotbarconfigurator.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["HandledScreenMixin", "ClientPlayNetworkHandlerMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
